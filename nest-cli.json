@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/nest-training",
+  "sourceRoot": "apps/nest-training/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/nest-training/tsconfig.app.json"
+  },
+  "projects": {
+    "nest-training": {
+      "type": "application",
+      "root": "apps/nest-training",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-training/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-training/tsconfig.app.json"
+      }
+    },
+    "micro": {
+      "type": "application",
+      "root": "apps/micro",
+      "entryFile": "main",
+      "sourceRoot": "apps/micro/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/micro/tsconfig.app.json"
+      }
+    }
+  }
+}
